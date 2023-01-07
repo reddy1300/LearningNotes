@@ -1,0 +1,15 @@
+Command to Start Selenium Server as Node:
+>java -jar <selenium-server-version.jar> hub
+Ex: java -jar selenium-server-4.7.2.jar hub
+
+Note: Hub and Node also be same machine
+
+--Start node in same machine
+>java -jar <selenium-server-version.jar> node --detect-drivers true 
+
+
+--Start Node in different Machine
+>java -jar <selenium-server-version.jar> node --detect-drivers true  --publish-events tcp://<ip address of hub:4442> --subscribe-events tcp://<<ip address of hub:4443>
+
+
+
